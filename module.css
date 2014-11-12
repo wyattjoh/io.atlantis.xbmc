@@ -1,0 +1,35 @@
+figure.plugin-xbmc {
+    width: 98%;
+    max-width: 960px;
+    background: transparent;
+}
+
+figure.plugin-xbmc figcaption {
+    position: relative;
+    text-align: left;
+}
+
+figure.plugin-xbmc .image {
+    width: 960px;
+    height: 176px;
+    background-size: cover !important;
+}
+
+figure.plugin-xbmc .image.movie-animated {
+    -webkit-animation: movieBackgroundMoveImage 30s linear infinite;
+    animation: movieBackgroundMoveImage 30s linear infinite;
+}
+
+/* 67px wide */
+
+@keyframes movieBackgroundMoveImage {
+    0% { background-position: 0px 0px; }
+    50% { background-position: 0px -359px; }
+    100% { background-position: 0px 0px; }
+}
+
+@-webkit-keyframes movieBackgroundMoveImage {
+    0% { background-position: 0px 0px; }
+    50% { background-position: 0px -359px; }
+    100% { background-position: 0px 0px; }
+}

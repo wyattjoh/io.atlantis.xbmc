@@ -1,8 +1,8 @@
-<figure class="effect-goliath plugin-xbmc" ng-style="{ background: getRandomColor(resource.name) }">
-    <div class="image"></div>
-    <figcaption>
+<figure class="plugin-xbmc">
+    <div class="image" ng-class="pluginClasses" ng-style="pluginStyle"></div>
+    <figcaption ng-style="{ background: getRandomColor(resource.name) }">
         <h2>{{ ::resource.name }}</h2>
-        <p>Open {{ ::resource.name }} on {{ ::config.name }}</p>
+        <p>{{ currentlyPlaying.showtitle }}</p>
         <a ng-href="http://{{ ::resource.url }}">Open {{ ::resource.name }} on {{ ::config.name }}</a>
     </figcaption>
 </figure>
