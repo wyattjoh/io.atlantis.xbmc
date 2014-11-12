@@ -1,0 +1,8 @@
+<figure class="effect-goliath plugin-xbmc" ng-style="{ background: getRandomColor(resource.name) }">
+    <div class="image"></div>
+    <figcaption>
+        <h2>{{ ::resource.name }}</h2>
+        <p>Open {{ ::resource.name }} on {{ ::config.name }}</p>
+        <a ng-href="http://{{ ::resource.url }}">Open {{ ::resource.name }} on {{ ::config.name }}</a>
+    </figcaption>
+</figure>
